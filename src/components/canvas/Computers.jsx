@@ -46,7 +46,7 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
+    <Canvas className='sm:block hidden'
       frameloop='demand'
       shadows
       dpr={isMobile ? [1, 1.5] : [1, 2]}  // Adjust DPR for mobile
