@@ -19,9 +19,9 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  studynotion,
+  petgrove,
+  banking,
   threejs,
 } from "../assets";
 
@@ -198,9 +198,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "StudyNotion",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, puchase, and create video lectures and study plans from various instuctors, providing a satisfying learning to all.",
     tags: [
       {
         name: "react",
@@ -215,11 +215,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: studynotion,
+    source_code_link: "https://github.com/kc-sharma/StudyNotion",
   },
   {
-    name: "Job IT",
+    name: "PetGrove",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -236,13 +236,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: petgrove,
+    source_code_link: "https://github.com/kc-sharma/PetGrove",
   },
   {
-    name: "Trip Guide",
+    name: "Banking App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A complete banking platform that allows users to register, make transactions and review transactions",
     tags: [
       {
         name: "nextjs",
@@ -257,8 +257,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: banking,
+    source_code_link: "https://github.com/banking",
   },
 ];
 
