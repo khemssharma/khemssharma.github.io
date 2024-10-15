@@ -240,9 +240,9 @@ const projects = [
     source_code_link: "https://github.com/kc-sharma/PetGrove",
   },
   {
-    name: "Banking App",
+    name: "ChessImprover",
     description:
-      "A complete banking platform that allows users to register, make transactions and review transactions",
+      "Deep dive into the immersive chess gameplay and GPT game improvement suggestions",
     tags: [
       {
         name: "nextjs",
