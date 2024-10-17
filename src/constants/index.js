@@ -216,7 +216,7 @@ const projects = [
       },
     ],
     image: studynotion,
-    source_code_link: "https://github.com/kc-sharma/StudyNotion",
+    source_code_link: "https://github.com/ayushshanks/StudyNotion",
   },
   {
     name: "PetGrove",
@@ -237,7 +237,7 @@ const projects = [
       },
     ],
     image: petgrove,
-    source_code_link: "https://github.com/kc-sharma/PetGrove",
+    source_code_link: "https://github.com/ayushshanks/PetGrove",
   },
   {
     name: "ChessImprover",
@@ -258,7 +258,7 @@ const projects = [
       },
     ],
     image: banking,
-    source_code_link: "https://github.com/banking",
+    source_code_link: "https://github.com/ayushshanks/ChessImprover",
   },
 ];
 
