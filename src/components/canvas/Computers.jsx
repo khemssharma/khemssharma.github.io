@@ -21,8 +21,9 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        // Reduce scale on mobile so the model fits the viewport
+        scale={isMobile ? 0.5 : 0.75}
+        position={isMobile ? [0, -3.5, -3] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -34,7 +35,8 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    // Use a wider breakpoint so most phones count as mobile
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
@@ -64,11 +66,12 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      className="w-full"
+      className="w-full h-full"
       frameloop='demand'
       shadows={!isMobile}
       dpr={isMobile ? 1 : [1, 2]}
-      camera={{ position: isMobile ? [20, 2, 5] : [20, 3, 5], fov: 25 }}
+      // Move the camera further back on mobile to show more of the model
+      camera={{ position: isMobile ? [20, 2, 10] : [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
