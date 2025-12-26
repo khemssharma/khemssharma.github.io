@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
@@ -7,8 +7,14 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  // Ensure the scene renders once the model finishes loading (fixes first-load blank on some mobiles)
+  const { invalidate } = useThree();
+  useEffect(() => {
+    invalidate();
+  }, [computer, invalidate]);
+
   return (
-    <mesh>
+    <mesh> 
       {/* Make the model visible on darker mobile displays by increasing ambient lighting */}
       <hemisphereLight intensity={isMobile ? 0.35 : 0.15} groundColor='black' />
       <ambientLight intensity={isMobile ? 0.6 : 0.3} />
@@ -69,7 +75,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       className="w-full h-full"
-      frameloop='demand'
+      frameloop={isMobile ? 'always' : 'demand'}
       shadows={!isMobile}
       dpr={isMobile ? 1 : [1, 2]}
       // Move the camera further back on mobile to show more of the model
