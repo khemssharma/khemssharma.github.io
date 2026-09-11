@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
+import jobit from "./jobit.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -53,6 +54,7 @@ export {
   typescript,
   threejs,
   meta,
+  jobit,
   shopify,
   starbucks,
   tesla,
