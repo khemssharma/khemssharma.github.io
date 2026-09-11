@@ -15,10 +15,8 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  github,
+  jobit,
   studynotion,
   petgrove,
   banking,
@@ -38,7 +36,7 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
-];
+  ];
 
 const services = [
   {
@@ -57,7 +55,7 @@ const services = [
     title: "Content Creator",
     icon: creator,
   },
-];
+  ];
 
 const technologies = [
   {
@@ -112,62 +110,34 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-];
+  ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Development Engineer",
+    company_name: "SP IT Academy Pvt. Ltd.",
+    icon: jobit,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Feb 2026 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Spearheading project development and automation testing as a Scrum Master, ensuring product quality and faster delivery.",
+      "Collaborating with cross-functional teams to plan sprints, track progress, and remove delivery blockers.",
+      "Driving automation testing practices to improve release quality and reduce manual QA effort.",
+      ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Full-Stack Developer",
+    company_name: "Freelance & Open Source Contributor",
+    icon: github,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Mar 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+      "Architected an open-source-inspired MERN-stack EdTech platform, implementing interactive content delivery workflows to streamline online learning administration for an EdTech startup.",
+      "Developed a custom MERN-stack ERP system, integrating robust user authentication and project management modules to optimize operational resource tracking for a construction company.",
+      "Active open-source contributor to projects like lichess and TestNG, with 1000+ contributions in the past year.",
+      ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
+  ];
 
 const testimonials = [
   {
@@ -194,7 +164,7 @@ const testimonials = [
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
-];
+  ];
 
 const projects = [
   {
@@ -214,7 +184,7 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
-    ],
+      ],
     image: studynotion,
     source_code_link: "https://github.com/ayushshanks/StudyNotion",
   },
@@ -235,7 +205,7 @@ const projects = [
         name: "scss",
         color: "pink-text-gradient",
       },
-    ],
+      ],
     image: petgrove,
     source_code_link: "https://github.com/ayushshanks/PetGrove",
   },
@@ -256,10 +226,10 @@ const projects = [
         name: "css",
         color: "pink-text-gradient",
       },
-    ],
+      ],
     image: banking,
     source_code_link: "https://github.com/ayushshanks/ChessImprover",
   },
-];
+  ];
 
 export { services, technologies, experiences, testimonials, projects };
